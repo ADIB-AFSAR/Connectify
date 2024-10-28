@@ -1,0 +1,153 @@
+.messaging-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 95vh;
+}
+
+.connections-list {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.connections-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+}
+
+.connection-card {
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: start;
+    width: 90%;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: row;
+    border-radius: 22px;
+background: linear-gradient(315deg, #81b6e6, #6d99c2);
+box-shadow:  -25px -25px 100px #557797,
+             50px 50px 100px #9dddff;
+}
+
+.connection-card:hover {
+    transform: scale(1.05);
+}
+
+.connection-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat-interface {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.messages-list {
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    gap: 10px;
+    height: 380px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 60%; /* Set a maximum width to avoid extremely long messages */
+    width: auto; /* Let the width adjust according to the content */
+    word-wrap: break-word; /* Break long words to fit within the message box */
+    align-self: flex-start; /* Default to left alignment */
+}
+
+.sent {
+    background-color: #daf8e3;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.received {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.send-message {
+    display: flex;
+    gap: 5px;
+}
+
+.send-message input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.send-message button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.send-message button:hover {
+    background-color: #0056b3;
+}
+/* Styling for the scrollbar */
+.messages-list::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track styling */
+.messages-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Thumb styling */
+.messages-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 7px;
+}
+
+/* Thumb hover effect */
+.messages-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

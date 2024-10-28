@@ -1,0 +1,214 @@
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family:  system-ui !important;
+  background-color: #79aad7 !important;
+}
+
+:root,
+html,
+body {
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+body,
+i,
+img,
+small,
+label,
+li,
+ul,
+p,
+nav,
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* App.css */
+.modal-backdrop { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+@media (max-width: 486px) {
+  .notification,.read-btn {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.mark-as-read-text {
+  display: inline;
+}
+.read-text {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mark-as-read-text {
+    display: none;
+  }
+  .read-text {
+    font-size: 12px;
+    display: inline;
+  }
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative; 
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+header {
+    width: 100%;
+    max-width: 1200px; /* Set a max-width for larger screens */
+    margin: 0 auto;  
+}
+@media (max-width: 768px) {
+    header {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;  
+}
+* {
+    box-sizing: border-box;
+}
+
+header {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
+
+.effect{
+  border-radius: 22px;
+  background: linear-gradient(315deg, #81b6e6, #6d99c2);
+  box-shadow:  -25px -25px 100px #557797,
+               50px 50px 100px #9dddff;
+}
+a:hover {
+  text-decoration : none !important;
+}
+
+.info-button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.info-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.info-message {
+  visibility: hidden;
+  font-size: 12px;
+  width: 150px; 
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute; 
+  left: -350%; 
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.info-button-container:hover .info-message {
+  visibility: visible;
+  opacity: 1;
+}
+ .del{
+  position: absolute;
+  top: 25% !important;
+ }
+.footer{
+  /* height: 100px; */
+  width: 100vw;
+  background-color: #519ce2;
+}
+
+.filterList{
+  border-bottom: 1px solid rgb(184, 176, 176);
+  padding: 4px;  
+}
+
+.filterList:hover{
+  background-color: rgb(228, 218, 218);
+  cursor: pointer;
+}
+/* Example: SignOut visibility on smaller screens */
+@media (max-width: 768px) {
+  .sign-out {
+        display: flex !important;
+        align-items: center;
+        font-size: 14px;
+        justify-content: center;
+        right: 18px;
+        top: -40% !important;
+        width: 5rem !important;
+        height: 2rem !important;   
+  } 
+}
